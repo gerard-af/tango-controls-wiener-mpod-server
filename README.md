@@ -10,6 +10,8 @@ The module and channel SNMP variables can be accessed over functions.
 See the README.txt file in the WienerMpodLvHvCtrl directory for information about compilation.
 The included html documentation gives further details about the device server configuration and the exposed functions and attributes.
 
+The DS configuration is also illustrated in the [wiki](https://github.com/gerard-af/tango-controls-wiener-mpod-server/wiki).
+
 # WienerMpodHvModule
 This device class simplifies working with a single Iseg high-voltage modules by exposing the module's and the channels' SNMP 
 variables as attributes. The channel attributes are generated dynamically for a given number of channels.
@@ -18,6 +20,8 @@ It requires a running WienerMpodLvHvCtrl device server.
 
 See the README.txt file in the WienerMpodHvModule directory for information about compilation.
 The included html documentation gives further details about the device server configuration and the exposed attributes.
+
+The DS configuration is also illustrated in the [wiki](https://github.com/gerard-af/tango-controls-wiener-mpod-server/wiki).
 
 # Other Software
 Other software for controlling MPOD crates is available. Using this software will familiarize you with your MPOD crate and help you to optimize your Tango-controls setup:
