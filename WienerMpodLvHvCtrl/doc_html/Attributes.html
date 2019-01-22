@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title> WienerMpodLvHvCtrl Tango Class Attributes </title>
+</head>
+<body text="Black" bgcolor="White" link="Blue" vlink="Purple" alink="Red">
+<br><br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=8> <font size=+1> <center><b> WienerMpodLvHvCtrl Class Attributes </b></font></center></td>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+		<td> <center><b> Name </b></center> </td>
+		<td> <center><b> Inherited </b></center> </td>
+		<td> <center><b> Abstract </b></center> </td>
+		<td> <center><b> Attr. type </b></center> </td>
+		<td> <center><b> R/W type </b></center> </td>
+		<td> <center><b> Data type </b></center> </td>
+		<td> <center><b> Level </b></center> </td>
+		<td> <center><b> Description </b></center> </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrIsMibFileLoaded.html"> IsMibFileLoaded </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_BOOLEAN </td>
+		<td> EXPERT </td>
+		<td> This value is set when th device server is initialized. It is true if the file WIENER-CRATE-MIB.txt<Br>
+			was found. The functionality of the device server will be restricted without this file. </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrSysDescr.html"> SysDescr </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> The system description. This string also contains the firmware version. </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrSysMainSwitch.html"> SysMainSwitch </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ_WRITE </td>
+		<td> Tango::DEV_ULONG </td>
+		<td> OPERATOR </td>
+		<td> The crate`s main switch. Possible values are 0 (off) or 1 (on). </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrSysStatus.html"> SysStatus </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_ULONG </td>
+		<td> OPERATOR </td>
+		<td> The crate`s status. Possible values are: <Br>
+			        mainOn (0) ,<Br>
+			        mainInhibit (1) ,<Br>
+			        localControlOnly (2) ,<Br>
+			        inputFailure (3) ,<Br>
+			        outputFailure (4) ,<Br>
+			        fantrayFailure (5) ,<Br>
+			        sensorFailure (6),<Br>
+			        vmeSysfail (7),<Br>
+			        plugAndPlayIncompatible (8),<Br>
+			        busReset (9),<Br>
+			        supplyDerating (10),<Br>
+			        supplyFailure (11),<Br>
+			        supplyDerating2 (12),<Br>
+			        supplyFailure2 (13) </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrSysStatusAsString.html"> SysStatusAsString </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> The crate`s status as string. Only the most important flag of SysStatus is reported. </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrSerialNumber.html"> SerialNumber </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> The crate`s serial number. </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrFanSpeed.html"> FanSpeed </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ_WRITE </td>
+		<td> Tango::DEV_ULONG </td>
+		<td> OPERATOR </td>
+		<td> The crate`s fan speed. For most crates the allowed values are 0 or 1200 - 5000. </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrNumberOfModules.html"> NumberOfModules </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_ULONG </td>
+		<td> OPERATOR </td>
+		<td> The number of modules inserted and recognized. This is only valid when the crate has been switched on. </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrNumberOfChannels.html"> NumberOfChannels </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_ULONG </td>
+		<td> OPERATOR </td>
+		<td> The number of detected HV and LV channels. Requires that the crate has been switched on. </td>
+	</tr>
+	<tr>
+		<td> <a href="AttrNumberOfGroups.html"> NumberOfGroups </a> </td>
+		<td> false </td>
+		<td> false </td>
+		<td> Scalar </td>
+		<td> READ </td>
+		<td> Tango::DEV_ULONG </td>
+		<td> OPERATOR </td>
+		<td> The number of groups defined for HV and LV channels. Requires that thecrate has been switched on. </td>
+	</tr>
+</table>
+<br><br>
+<hr>
+<br><br>
+<font size="+1"><u><b> There is no dynamic attribute defined. </b></u></font>
+</body>
+</html>

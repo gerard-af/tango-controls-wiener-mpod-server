@@ -1,0 +1,83 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title> WienerMpodLvHvCtrl Tango Class Properties </title>
+</head>
+<body text="Black" bgcolor="White" link="Blue" vlink="Purple" alink="Red">
+<br><br><br>
+<font size="+1"><u><b> WienerMpodLvHvCtrl  Properties : </b></u></font>
+<br><br><br>
+<font size="+1"><u><b> There is no class properties </b></u></font>
+<br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=4> <font size=+1> <center><b> Device Properties </b></font></center></td>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+		<td> <center><b> Name </b></center> </td>
+		<td> <center><b> Description </b></center> </td>
+		<td> <center><b> Type </b></center> </td>
+		<td> <center><b> Default Value </b></center> </td>
+	</tr>
+	<tr>
+		<td> IpAddr </td>
+		<td> IP Address for the MPOD controller. </td>
+		<td> String </td>
+		<td> none </td>
+	</tr>
+	<tr>
+		<td> SnmpCommunityName </td>
+		<td> Used SNMP community. This property can limit the access to SNMP variables.<Br>
+			By default `guru` defines the read-write community.<Br>
+			The community `public` prohibits write operations.<Br>
+			These default settings can be changed. </td>
+		<td> String </td>
+		<td> guru <br> </td>
+	</tr>
+	<tr>
+		<td> SnmpTimeout </td>
+		<td> This value is passed to the net-snmp library. For values<Br>
+			<= 0 the library default is used. The value is given in ms.<Br>
+			Appropriate values are 500 ... 2000. </td>
+		<td> int </td>
+		<td> -1 <br> </td>
+	</tr>
+	<tr>
+		<td> ThreadPollingIntervalMsFast </td>
+		<td> The communication to the MPOD can be run in a thread.<Br>
+			This property defines a time intarval for periodic <Br>
+			polling of all data in milliseconds. The defined interval<Br>
+			should be 200 ms or greater.<Br>
+			If the value of this property is 0, the thread is not started, <Br>
+			all commands are directly sent to the MPOD, the device <Br>
+			server waits for the response from the MPOD.<Br>
+			<Br>
+			The property ThreadPollingIntervalMsFast concerns the <Br>
+			measured voltages and currents. </td>
+		<td> int </td>
+		<td> 500 <br> </td>
+	</tr>
+	<tr>
+		<td> ThreadPollingIntervalMsIntermediate </td>
+		<td> Like ThreadPollingIntervalMsFast.<Br>
+			<Br>
+			The property ThreadPollingIntervalMsIntermediate concerns the <Br>
+			polling for status flags and most other SNMP variables. </td>
+		<td> int </td>
+		<td> 1000 <br> </td>
+	</tr>
+	<tr>
+		<td> ThreadPollingIntervalMsSlow </td>
+		<td> Like ThreadPollingIntervalMsFast.<Br>
+			<Br>
+			The property ThreadPollingIntervalMsSlow concerns the <Br>
+			polling of SNMP variables that are set by the user.<Br>
+			<Br>
+			These variables are read if ThreadPollingIntervalMsSlow <Br>
+			has expired or a value has been set. This represents an<Br>
+			important speedup for the communication with the MPOD. </td>
+		<td> int </td>
+		<td> 2000 <br> </td>
+	</tr>
+</table>
+</body>
+</html>

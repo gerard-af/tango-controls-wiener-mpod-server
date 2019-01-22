@@ -1,0 +1,658 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<html>
+<head>
+<title> WienerMpodLvHvCtrl Tango Class Commands </title>
+</head>
+<body text="Black" bgcolor="White" link="Blue" vlink="Purple" alink="Red">
+<br><br><br><br>
+<Table Border=2 Cellpadding=3 CELLSPACING=0>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+	<td colspan=5> <font size=+1> <center><b> WienerMpodLvHvCtrl Class Commands </b></font></center></td>
+	<tr bgcolor="#CCCCFF" class="TableHeadingColor">
+		<td> <center><b> Name </b></center> </td>
+		<td> <center><b> Input type </b></center> </td>
+		<td> <center><b> Output type </b></center> </td>
+		<td> <center><b> Level </b></center> </td>
+		<td> <center><b> Description </b></center> </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdStatus.html"> Status </a> </td>
+		<td> DEV_VOID </td>
+		<td> CONST_DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> This command gets the device status (stored in its <i>device_status</i> data member) and returns it to the caller. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetConfigMaxCurrent.html"> ChannelGetConfigMaxCurrent </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetConfigMaxSenseVoltage.html"> ChannelGetConfigMaxSenseVoltage </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetConfigMaxTerminalVoltage.html"> ChannelGetConfigMaxTerminalVoltage </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetCurrent.html"> ChannelGetCurrent </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> Returns the output current for the specified channel. <Br>
+			It this current is reached, the channel operates in current regulation mode.<Br>
+			The corresponding flag is set in the channel status.<Br>
+			If current trips are enbled for HV modules, the returned current<Br>
+			defines the trip current. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetCurrentFallRate.html"> ChannelGetCurrentFallRate </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetCurrentRiseRate.html"> ChannelGetCurrentRiseRate </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetIndex.html"> ChannelGetIndex </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementCurrent.html"> ChannelGetMeasurementCurrent </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementSenseVoltage.html"> ChannelGetMeasurementSenseVoltage </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementTemperature.html"> ChannelGetMeasurementTemperature </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementTerminalVoltage.html"> ChannelGetMeasurementTerminalVoltage </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetStatus.html"> ChannelGetStatus </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> Return the channel status as integer for a given module slot and channel index. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetStatusAsString.html"> ChannelGetStatusAsString </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetSupervisionBehavior.html"> ChannelGetSupervisionBehavior </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetSupervisionMaxCurrent.html"> ChannelGetSupervisionMaxCurrent </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetSupervisionMaxPower.html"> ChannelGetSupervisionMaxPower </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetSupervisionMaxTerminalVoltage.html"> ChannelGetSupervisionMaxTerminalVoltage </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetSupervisionMinSenseVoltage.html"> ChannelGetSupervisionMinSenseVoltage </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetSwitch.html"> ChannelGetSwitch </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetTripTime.html"> ChannelGetTripTime </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetUserConfig.html"> ChannelGetUserConfig </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetVoltage.html"> ChannelGetVoltage </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetVoltageFallRate.html"> ChannelGetVoltageFallRate </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetVoltageRiseRate.html"> ChannelGetVoltageRiseRate </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetCurrent.html"> ChannelSetCurrent </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetCurrentFallRate.html"> ChannelSetCurrentFallRate </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetCurrentRiseRate.html"> ChannelSetCurrentRiseRate </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetSupervisionBehavior.html"> ChannelSetSupervisionBehavior </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetSupervisionMaxCurrent.html"> ChannelSetSupervisionMaxCurrent </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetSupervisionMaxTerminalVoltage.html"> ChannelSetSupervisionMaxTerminalVoltage </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetSupervisionMinSenseVoltage.html"> ChannelSetSupervisionMinSenseVoltage </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetSwitch.html"> ChannelSetSwitch </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetTripTime.html"> ChannelSetTripTime </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetUserConfig.html"> ChannelSetUserConfig </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetVoltage.html"> ChannelSetVoltage </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetVoltageFallRate.html"> ChannelSetVoltageFallRate </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelSetVoltageRiseRate.html"> ChannelSetVoltageRiseRate </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetFanSpeed.html"> CrateGetFanSpeed </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetNumberOfChannels.html"> CrateGetNumberOfChannels </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetNumberOfGroups.html"> CrateGetNumberOfGroups </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdState.html"> State </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_STATE </td>
+		<td> OPERATOR </td>
+		<td> This command gets the device state (stored in its <i>device_state</i> data member) and returns it to the caller. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetNumberOfModules.html"> CrateGetNumberOfModules </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetOccupiedSlots.html"> CrateGetOccupiedSlots </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> EXPERT </td>
+		<td> Returns the slot indices of the slots occupied by a HV or a LV module. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetSerialNumber.html"> CrateGetSerialNumber </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetSysDescr.html"> CrateGetSysDescr </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetSysMainSwitch.html"> CrateGetSysMainSwitch </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetSysStatus.html"> CrateGetSysStatus </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateGetSysStatusAsString.html"> CrateGetSysStatusAsString </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateSetFanSpeed.html"> CrateSetFanSpeed </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_BOOLEAN </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateSetSysHardwareReset.html"> CrateSetSysHardwareReset </a> </td>
+		<td> DEV_ULONG </td>
+		<td> DEV_BOOLEAN </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdCrateSetSysMainSwitch.html"> CrateSetSysMainSwitch </a> </td>
+		<td> DEV_ULONG </td>
+		<td> DEV_BOOLEAN </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdGroupGetIndex.html"> GroupGetIndex </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdGroupSetSwitch.html"> GroupSetSwitch </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> EXPERT </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetAuxiliaryMeasurementVoltage0.html"> ModuleGetAuxiliaryMeasurementVoltage0 </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetAuxiliaryMeasurementVoltage1.html"> ModuleGetAuxiliaryMeasurementVoltage1 </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetDescription.html"> ModuleGetDescription </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetEventChannelStatus.html"> ModuleGetEventChannelStatus </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetEventStatus.html"> ModuleGetEventStatus </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetEventStatusAsString.html"> ModuleGetEventStatusAsString </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetHardwareLimitCurrent.html"> ModuleGetHardwareLimitCurrent </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetHardwareLimitVoltage.html"> ModuleGetHardwareLimitVoltage </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetIndex.html"> ModuleGetIndex </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetIsHvModule.html"> ModuleGetIsHvModule </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> This command returns true if the module in `slot index` is a HV module. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetMeasurementTemperature0.html"> ModuleGetMeasurementTemperature0 </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetMeasurementTemperature1.html"> ModuleGetMeasurementTemperature1 </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetMeasurementTemperature2.html"> ModuleGetMeasurementTemperature2 </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetMeasurementTemperature3.html"> ModuleGetMeasurementTemperature3 </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetNumberOfChannels.html"> ModuleGetNumberOfChannels </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> This command returns the number of channels for the module<Br>
+			in slot `slot index`. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetRampSpeedCurrent.html"> ModuleGetRampSpeedCurrent </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetRampSpeedVoltage.html"> ModuleGetRampSpeedVoltage </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_DOUBLE </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetStatus.html"> ModuleGetStatus </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_LONG </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleGetStatusAsString.html"> ModuleGetStatusAsString </a> </td>
+		<td> DEV_LONG </td>
+		<td> DEV_STRING </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleSetDoClear.html"> ModuleSetDoClear </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleSetRampSpeedCurrent.html"> ModuleSetRampSpeedCurrent </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdModuleSetRampSpeedVoltage.html"> ModuleSetRampSpeedVoltage </a> </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpGetDescription.html"> SnmpGetDescription </a> </td>
+		<td> DEV_STRING </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> This function simplifies debugging when working with the low level snmp functions. <Br>
+			It returns a description for a given OID or the corresponding human readable string. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpGetNextOID.html"> SnmpGetNextOID </a> </td>
+		<td> DEV_STRING </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> For a given OID variable the next OID is returned.<Br>
+			Rhis allows to iterate over all OIDs exposed by the MPOD controler.<Br>
+			This is mostly a debug function.<Br>
+			It can be used to implement a functionality similar to ``snmpwalk``. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpGetValueDouble.html"> SnmpGetValueDouble </a> </td>
+		<td> DEV_STRING </td>
+		<td> DEV_DOUBLE </td>
+		<td> EXPERT </td>
+		<td> Reads the SNMP variable defined by an OID or an equivalent <Br>
+			human readable string. Returns a double value. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpGetValueInt.html"> SnmpGetValueInt </a> </td>
+		<td> DEV_STRING </td>
+		<td> DEV_LONG </td>
+		<td> EXPERT </td>
+		<td> Reads the SNMP variable defined by an OID or an equivalent <Br>
+			human readable string. Returns an unsigned integer value. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpGetValueString.html"> SnmpGetValueString </a> </td>
+		<td> DEV_STRING </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> Reads the SNMP variable defined by an OID or an equivalent <Br>
+			human readable string. Returns a string value. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpSetValueDouble.html"> SnmpSetValueDouble </a> </td>
+		<td> DEVVAR_DOUBLESTRINGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> EXPERT </td>
+		<td> Set a SNMP variable defined by an OID to the double <Br>
+			value passed as an argument. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpSetValueInt.html"> SnmpSetValueInt </a> </td>
+		<td> DEVVAR_LONGSTRINGARRAY </td>
+		<td> DEV_BOOLEAN </td>
+		<td> EXPERT </td>
+		<td> Set a SNMP variable defined by an OID to the integer <Br>
+			value passed as an argument. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpTranslateFromOID.html"> SnmpTranslateFromOID </a> </td>
+		<td> DEV_STRING </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> For a given OID variable the human readable form of the <Br>
+			variable is returned such as defined in the file WIENER-CRATE-MIB.txt </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdSnmpTranslateToOID.html"> SnmpTranslateToOID </a> </td>
+		<td> DEV_STRING </td>
+		<td> DEV_STRING </td>
+		<td> EXPERT </td>
+		<td> Inverses TranslateFromOID. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementCurrentVector.html"> ChannelGetMeasurementCurrentVector </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementSenseVoltageVector.html"> ChannelGetMeasurementSenseVoltageVector </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementTerminalVoltageVector.html"> ChannelGetMeasurementTerminalVoltageVector </a> </td>
+		<td> DEVVAR_ULONGARRAY </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+	<tr>
+		<td> <a href="CmdChannelGetMeasurementTimeVector.html"> ChannelGetMeasurementTimeVector </a> </td>
+		<td> DEV_VOID </td>
+		<td> DEVVAR_DOUBLEARRAY </td>
+		<td> OPERATOR </td>
+		<td> None. </td>
+	</tr>
+</table>
+</body>
+</html>
