@@ -24,7 +24,7 @@ The included html documentation gives further details about the device server co
 The DS configuration is also illustrated in the [wiki](https://github.com/gerard-af/tango-controls-wiener-mpod-server/wiki).
 
 # Other Software
-Other software for controlling MPOD crates is available. Using this software will familiarize you with your MPOD crate and help you to optimize your Tango-controls setup:
+Other software for controlling MPOD crates is available. Using this software will familiarize you with your MPOD crate and help you to optimize your Tango-controls setup. You can also run this control software in parallel with you Tango setup.
 * Easy LV|HV is available from the [Analog Flavor website](http://www.analogflavor.com/en/bespice/easy-lvhv-control-software/).
 * iseg SNMPcontrol can be downloaded from the [iseg support page](https://iseg-hv.com/en/support/downloads).
 
