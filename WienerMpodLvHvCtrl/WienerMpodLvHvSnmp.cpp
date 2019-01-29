@@ -2252,7 +2252,7 @@ void WienerMpodLvHvSnmp::getOccupiedSlotsImpl(std::vector<size_t> &occupied_slot
 
 
 std::string WienerMpodLvHvSnmp::convertModuleEventStatusToString(unsigned long int_status) const {
-    std::string result = "";
+    std::string result = "off";
 
     if (checkBitIsSet(int_status, 6)) {
         result = "input error";
@@ -2400,7 +2400,7 @@ std::string WienerMpodLvHvSnmp::convertChannelStatusToString(unsigned long int_s
 }
 
 std::string WienerMpodLvHvSnmp::convertModuleStatusToString(unsigned long int_status) const {
-    std::string result = "";
+    std::string result = "off";
 
     if (checkBitIsSet(int_status, 6)) {
         result = "input error";

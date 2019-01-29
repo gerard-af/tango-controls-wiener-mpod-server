@@ -78,7 +78,9 @@ else:
 db.get_device_property_list('mpod_test/mpod/1', '*')
 db.get_device_property('mpod_test/mpod/1', 'IpAddr')
 db.get_device_property('mpod_test/mpod/1', 'SnmpCommunityName')
-db.get_device_property('mpod_test/mpod/1', 'ThreadPollingIntervalMs')
+db.get_device_property('mpod_test/mpod/1', 'ThreadPollingIntervalMsFast')
+db.get_device_property('mpod_test/mpod/1', 'ThreadPollingIntervalMsIntermediate')
+db.get_device_property('mpod_test/mpod/1', 'ThreadPollingIntervalMsSlow')
 
 
 

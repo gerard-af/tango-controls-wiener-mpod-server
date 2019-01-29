@@ -48,6 +48,8 @@ POSSIBILITY OF SUCH DAMAGE.
 
 #ifdef WIN32
     typedef unsigned long oid;
+    typedef signed __int64       int64_t;
+    typedef unsigned __int64     uint64_t;
 #else
     typedef u_long oid;
 #endif

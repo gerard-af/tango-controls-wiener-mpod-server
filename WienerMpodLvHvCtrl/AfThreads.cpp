@@ -44,22 +44,22 @@ POSSIBILITY OF SUCH DAMAGE.
 #include <windows.h>
 #include <exception>
 
-AfThreadMutex::AfThreadMutex() {
+AfThreadsMutex::AfThreadsMutex() {
     mMutexHandle = ::CreateMutex(0, FALSE, 0);
 }
 
-AfThreadMutex::~AfThreadMutex() {
+AfThreadsMutex::~AfThreadsMutex() {
     if (mMutexHandle) {
         ::CloseHandle(mMutexHandle);
         mMutexHandle = 0;
     }
 }
 
-void AfThreadMutex::lock() {
+void AfThreadsMutex::lock() {
     ::WaitForSingleObject(mMutexHandle, INFINITE);
 }
 
-void AfThreadMutex::unlock() {
+void AfThreadsMutex::unlock() {
     ::ReleaseMutex(mMutexHandle);
 }
 
