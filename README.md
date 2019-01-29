@@ -12,6 +12,8 @@ The included html documentation gives further details about the device server co
 
 The DS configuration is also illustrated in the [wiki](https://github.com/gerard-af/tango-controls-wiener-mpod-server/wiki).
 
+The DS might not run if your MPOD controller runs old firmware. We tested version MPOD 2.1.2212.0 and everything was fine. If your version is older a firmware update might be necessary.
+
 # WienerMpodHvModule
 This device class simplifies working with a single Iseg high-voltage modules by exposing the module's and the channels' SNMP 
 variables as attributes. The channel attributes are generated dynamically for a given number of channels.
